@@ -1,0 +1,76 @@
+What does JSON stand for?
+JavaScript Object Notation
+
+What is the purpose of JSON?
+It is used to pass data around, commonly from frontend to backend 
+
+What does the package.json file do?
+Holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify
+the project as well as handle the project's dependencies. It can also contain other metadata such as a 
+project description, the version of the project in a particular distribution, license information, even configuration
+data - all of which can be vital to both npm and to the end users of the package.
+
+How do you install dependencies in a project after first cloning it from Github?
+npm install
+
+What does "forking" mean in the context of Github?
+Taking a copy of someone else's code
+
+What data types do you know?
+String
+Int
+Boolean
+Null 
+undefined
+
+What is the difference between primitive and complex data types, and can you give examples of each?
+A variable may store two types of data: primitive and reference. Data can be stored in variables and you can create variables by using keywords such as const or let.
+You can access variables and manipulate the actual value stored in variables when created with the let keyword. For e.g.
+
+let name = "Ruzina";
+let age = 26;
+
+Unlike the primitive value, when you manipulate an object, you are working on the reference to that object, rather than the actual object. In short, a variable that stores an object is accessed by reference.
+To determine the type of a primitive value you use the typeof operator. For example:
+
+let x = 10;
+console.log(typeof(x)); // number 
+
+What would be the best data type for representing whether a user is logged into the system or not?
+Boolean
+
+How would you create a variable whose value could not be changed?
+const
+
+What would be the outcome of running this code?
+
+const firstName = "Sandra";
+
+function sayHello(name) {
+  console.log("Hello, " + firstName);
+}
+
+sayHello("Sally");
+
+outcome: Hello, Sandra
+
+What would be the outcome of running this code?
+function getFullName(firstName, lastName) {
+  const fullName = firstName + " " + lastName;
+  return fullName;
+}
+
+const result = getFullname("Sally", "Jennings");
+
+console.log(fullName);
+
+outcome: undefined (fullName is scoped within the function body)
+
+If you wanted to see what dependencies were required in this project, where would you to to look for a list?
+package.json
+
+When you install dependencies, what directory is created?
+Npm modules
+
+How can you write comments in your code?
+// or /* */
